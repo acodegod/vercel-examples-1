@@ -1,4 +1,12 @@
 <?php
+$file= __DIR__ . '/..'.$_SERVER["PHP_SELF"];
 
-header('content-type: application/json');
-echo json_encode(['time' => time(), 'date' => date('d.m.Y'), 'tech' => 'Vercel']);
+if(file_exists($file))
+{
+   return false;
+}
+else
+{
+    require_once __DIR__ . '/../index.php';
+}
+#echo $_SERVER["PHP_SELF"];
