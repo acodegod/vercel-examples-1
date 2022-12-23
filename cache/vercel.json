@@ -1,6 +1,0 @@
-{
-  "regions": ["bru1"],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index.ts" }
-  ]
-}
